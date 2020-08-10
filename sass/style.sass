@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
 
 $color-warning: #F79420
-$color-warning-2: #F79425
 $color-danger: #FD5629
 
 body
@@ -65,7 +64,7 @@ h3, .h3
 	border: 0
 	border-radius: 100px
 	font-weight: bold
-	padding: 6px 28px
+	padding: 6px 32px
 	position: relative
 	transition: .3s
 .btn-danger
@@ -76,14 +75,31 @@ h3, .h3
 	font-size: 22px
 	padding: 7px 28px
 	min-width: 207px
+.btn-arrow
+	position: relative
 	&:after 
 		content: ''
 		width: 86px
 		height: 26px
 		position: absolute
 		pointer-events: none
-		background-image: url(../img/arr.svg)
 		background-size: cover
+.btn-arrow-white
+	&:after 
+		background-image: url(../img/arr-white.svg)
+.btn-arrow-orange
+	&:after 
+		background-image: url(../img/arr-orange.svg)
+.btn-arrow-1
+	&:after 
+		top: 14px
+		right: calc(100% + 13px)
+		transform: rotateX(180deg)
+.btn-arrow-2
+	&:after 
+		top: 8px
+		left: calc(100% + 14px)
+		transform: rotateY(180deg)
 
 .form-control
 	height: 47px
@@ -249,8 +265,10 @@ h3, .h3
 	.container 
 		padding-top: 34px
 
-.section-1, .section-3
+.section-shadow
 	background: url(../img/shadow.png) top center no-repeat
+
+.section-particles
 	.container 
 		&:before, &:after 
 			content: ''
@@ -294,10 +312,6 @@ h3, .h3
 			margin-bottom: 9px
 		@media (min-width: 1500px)
 			margin-right: 80px
-		&:after 
-			top: 14px
-			right: calc(100% + 13px)
-			transform: rotateX(180deg)
 	.owl-theme
 		.owl-nav
 			[class*=owl-]
@@ -311,17 +325,12 @@ h3, .h3
 .section-4
 	padding-top: 36px
 	padding-bottom: 32px
-	background: $color-warning-2
+	background: $color-warning
 
 .section-5
 	padding-top: 49px
 	padding-bottom: 47px
 	background: #1E1E1E url(../img/bg.png)
-	.btn-lg
-		&:after 
-			top: 8px
-			left: calc(100% + 14px)
-			transform: rotateY(180deg)
 
 .footer
 	padding-top: 41px

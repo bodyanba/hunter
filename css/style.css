@@ -64,7 +64,7 @@ h1, .h1 {
   border: 0;
   border-radius: 100px;
   font-weight: bold;
-  padding: 6px 28px;
+  padding: 6px 32px;
   position: relative;
   transition: 0.3s; }
 
@@ -77,14 +77,32 @@ h1, .h1 {
   font-size: 22px;
   padding: 7px 28px;
   min-width: 207px; }
-  .btn-lg:after {
+
+.btn-arrow {
+  position: relative; }
+  .btn-arrow:after {
     content: "";
     width: 86px;
     height: 26px;
     position: absolute;
     pointer-events: none;
-    background-image: url(../img/arr.svg);
     background-size: cover; }
+
+.btn-arrow-white:after {
+  background-image: url(../img/arr-white.svg); }
+
+.btn-arrow-orange:after {
+  background-image: url(../img/arr-orange.svg); }
+
+.btn-arrow-1:after {
+  top: 14px;
+  right: calc(100% + 13px);
+  transform: rotateX(180deg); }
+
+.btn-arrow-2:after {
+  top: 8px;
+  left: calc(100% + 14px);
+  transform: rotateY(180deg); }
 
 .form-control {
   height: 47px;
@@ -258,21 +276,22 @@ h1, .h1 {
 .section-1 .container {
   padding-top: 34px; }
 
-.section-1, .section-3 {
+.section-shadow {
   background: url(../img/shadow.png) top center no-repeat; }
-  .section-1 .container:before, .section-1 .container:after, .section-3 .container:before, .section-3 .container:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 725px;
-    background: url(../img/particles.png) center right no-repeat;
-    pointer-events: none; }
-  .section-1 .container:before, .section-3 .container:before {
-    right: calc(100% - 90px); }
-  .section-1 .container:after, .section-3 .container:after {
-    left: calc(100% - 90px);
-    transform: rotateY(180deg); }
+
+.section-particles .container:before, .section-particles .container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 725px;
+  background: url(../img/particles.png) center right no-repeat;
+  pointer-events: none; }
+.section-particles .container:before {
+  right: calc(100% - 90px); }
+.section-particles .container:after {
+  left: calc(100% - 90px);
+  transform: rotateY(180deg); }
 
 .owl-2 .owl-item {
   overflow: hidden; }
@@ -305,10 +324,6 @@ h1, .h1 {
     @media (min-width: 1500px) {
       .section-2 .btn-lg {
         margin-right: 80px; } }
-    .section-2 .btn-lg:after {
-      top: 14px;
-      right: calc(100% + 13px);
-      transform: rotateX(180deg); }
   .section-2 .owl-theme .owl-nav [class*=owl-] {
     margin-top: 28px; }
 
@@ -319,16 +334,12 @@ h1, .h1 {
 .section-4 {
   padding-top: 36px;
   padding-bottom: 32px;
-  background: #F79425; }
+  background: #F79420; }
 
 .section-5 {
   padding-top: 49px;
   padding-bottom: 47px;
   background: #1E1E1E url(../img/bg.png); }
-  .section-5 .btn-lg:after {
-    top: 8px;
-    left: calc(100% + 14px);
-    transform: rotateY(180deg); }
 
 .footer {
   padding-top: 41px;

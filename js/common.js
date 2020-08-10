@@ -40,6 +40,13 @@ $(document).ready(function() {
     autoHeight: true,
   });
 
+  $('.video-modal').on('show.bs.modal', function() {
+    var src = 'https://www.youtube.com/embed/OKW018foQmg?autoplay=1';
+    $(this).find('iframe').attr('src', src);
+  }).on('hidden.bs.modal', function() {
+    $(this).find('iframe').removeAttr('src');
+	})
+
 });
 
 
