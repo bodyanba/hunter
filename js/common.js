@@ -45,7 +45,14 @@ $(document).ready(function() {
     $(this).find('iframe').attr('src', src);
   }).on('hidden.bs.modal', function() {
     $(this).find('iframe').removeAttr('src');
-	})
+	});
+
+	$('input[name="options"]').on('change', function() {
+		if ($(this).val() == '1')
+			$('#row').removeClass('active')
+		else 
+			$('#row').addClass('active')
+	});
 
 });
 
