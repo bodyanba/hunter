@@ -91,11 +91,14 @@ h1, .h1 {
   padding: 6px 32px;
   position: relative;
   transition: 0.3s; }
-  .btn:hover {
+  .btn:hover:not([disabled]) {
     opacity: 0.8; }
 
 .btn-danger {
   background: linear-gradient(to right, #FD5629, #F79420); }
+  .btn-danger[disabled] {
+    background: #8E8E8E;
+    opacity: 1; }
 
 .btn-light {
   color: #F79420 !important;
@@ -265,7 +268,7 @@ h1, .h1 {
   margin-right: auto; }
 
 .wi-1140 {
-  max-width: 1117px; }
+  max-width: 1140px; }
 
 .wi-1117 {
   max-width: 1117px;
@@ -285,7 +288,15 @@ h1, .h1 {
   background-color: #fff;
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  transition: 0.3s;
+  height: 100%; }
+  .slide:hover {
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px); }
+  .slide h3 {
+    margin-left: -10px;
+    margin-right: -10px; }
 
 .owl-carousel .owl-item img {
   display: inline;
@@ -391,8 +402,7 @@ h1, .h1 {
     color: #F79420;
     background-color: #fff;
     min-width: 132px;
-    padding-top: 5.5px;
-    padding-bottom: 5.5px;
+    padding: 5.5px 28px;
     box-shadow: none !important; }
     .btn-wrap .btn.active {
       color: #fff;
