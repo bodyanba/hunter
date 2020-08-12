@@ -196,15 +196,20 @@ h1, .h1 {
     margin-top: 0;
     margin-bottom: 15px; }
 
-.owl-1 .owl-stage-outer {
-  overflow: visible; }
-  .owl-1 .owl-stage-outer .owl-item {
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none; }
-    .owl-1 .owl-stage-outer .owl-item.active {
-      opacity: 1;
-      pointer-events: inherit; }
+.owl-1 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .owl-1 .owl-stage {
+    display: flex; }
+  .owl-1 .owl-stage-outer {
+    overflow: visible; }
+    .owl-1 .owl-stage-outer .owl-item {
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none; }
+      .owl-1 .owl-stage-outer .owl-item.active {
+        opacity: 1;
+        pointer-events: inherit; }
 
 .navbar {
   padding-top: 2px;
@@ -272,7 +277,7 @@ h1, .h1 {
 
 .wi-1117 {
   max-width: 1117px;
-  margin-bottom: 70px; }
+  margin-bottom: 46px; }
 
 .wi-978 {
   max-width: 978px; }
@@ -287,8 +292,6 @@ h1, .h1 {
   padding: 19px 18px 27px;
   background-color: #fff;
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
-  margin-top: 20px;
-  margin-bottom: 20px;
   transition: 0.3s;
   height: 100%; }
   .slide:hover {

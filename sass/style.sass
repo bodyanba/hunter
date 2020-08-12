@@ -188,15 +188,20 @@ h3, .h3
 			margin-top: 0
 			margin-bottom: 15px
 
-.owl-1 .owl-stage-outer
-	overflow: visible
-	.owl-item
-		opacity: 0
-		transition: opacity .3s
-		pointer-events: none
-		&.active
-			opacity: 1
-			pointer-events: inherit
+.owl-1 
+	padding-top: 20px
+	padding-bottom: 20px
+	.owl-stage
+		display: flex
+	.owl-stage-outer
+		overflow: visible
+		.owl-item
+			opacity: 0
+			transition: opacity .3s
+			pointer-events: none
+			&.active
+				opacity: 1
+				pointer-events: inherit
 
 .navbar
 	padding-top: 2px
@@ -256,7 +261,7 @@ h3, .h3
 	max-width: 1140px
 .wi-1117
 	max-width: 1117px
-	margin-bottom: 70px
+	margin-bottom: 46px
 .wi-978
 	max-width: 978px
 .wi-965
@@ -268,8 +273,6 @@ h3, .h3
 	padding: 19px 18px 27px
 	background-color: #fff
 	box-shadow: 0 10px 18px rgba(0, 0, 0, .08)
-	margin-top: 20px
-	margin-bottom: 20px
 	transition: .3s
 	height: 100%
 	&:hover

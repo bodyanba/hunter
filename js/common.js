@@ -41,7 +41,7 @@ $(document).ready(function() {
   });
 
   $('.video-modal').on('show.bs.modal', function() {
-    var src = 'https://www.youtube.com/embed/OKW018foQmg?autoplay=1';
+    var src = 'https://www.youtube.com/embed/OKW018foQmg?autoplay=1&amp;mute=0';
     $(this).find('iframe').attr('src', src);
   }).on('hidden.bs.modal', function() {
     $(this).find('iframe').removeAttr('src');
@@ -53,6 +53,8 @@ $(document).ready(function() {
 		else 
 			$('#row').addClass('active')
 	});
+
+	$("a[href^='#']:not([href^='#!'])").mPageScroll2id();
 
 });
 
