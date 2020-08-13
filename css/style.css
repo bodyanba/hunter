@@ -192,9 +192,6 @@ h1, .h1 {
     .owl-theme .owl-nav [class*=owl-].owl-next {
       right: 75px;
       transform: translate(50%, -50%); }
-  .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 0;
-    margin-bottom: 15px; }
 
 .owl-1 {
   padding-top: 20px;
@@ -358,8 +355,7 @@ h1, .h1 {
     border: 6px solid #F79420;
     border-radius: 1000px; }
   .section-2 .btn-lg {
-    margin-top: 12px;
-    margin-bottom: 20px; }
+    margin-top: 12px; }
     @media (min-width: 1200px) {
       .section-2 .btn-lg {
         margin-bottom: 9px; } }
