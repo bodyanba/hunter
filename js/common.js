@@ -47,6 +47,12 @@ $(document).ready(function() {
     $(this).find('iframe').removeAttr('src');
 	});
 
+  $('.video-cover img').on('click', function() {
+    var src = 'https://www.youtube.com/embed/OKW018foQmg?autoplay=1&amp;mute=0';
+    $(this).parent().hide();
+    $(this).parent().siblings('iframe').attr('src', src);
+  });
+
 	$('input[name="options"]').on('change', function() {
 		if ($(this).val() == '1')
 			$('#row').removeClass('active')
