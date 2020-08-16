@@ -140,6 +140,14 @@ h1, .h1 {
   left: calc(100% + 14px);
   transform: rotateY(180deg) rotateX(180deg); }
 
+@media (max-width: 575.98px) {
+  .btn-arrow-mobile:after {
+    top: auto;
+    left: auto;
+    bottom: calc(100% + 21px);
+    right: -8px;
+    transform: rotateY(180deg) rotate(40deg); } }
+
 .form-control {
   height: 47px;
   font-size: 18px;
@@ -380,13 +388,19 @@ h1, .h1 {
   background: #1E1E1E url(../img/bg.png); }
 
 .footer {
-  padding-top: 41px;
-  padding-bottom: 41px;
+  padding-top: 23px;
+  padding-bottom: 62px;
+  font-weight: normal;
   background: url(../img/shadow.png) top center no-repeat; }
-  @media (min-width: 1500px) {
-    .footer .footer-container {
-      padding-left: 150px;
-      padding-right: 150px; } }
+  .footer ul {
+    list-style: none;
+    padding-left: 0; }
+    .footer ul li {
+      margin-bottom: 1rem; }
+  .footer a {
+    color: inherit; }
+    .footer a:hover {
+      opacity: 0.8; }
 
 .section-6 .container {
   padding-top: 44px;
