@@ -23,7 +23,8 @@ main {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 h1, .h1 {
   letter-spacing: 1.2px;
@@ -495,5 +496,14 @@ h1, .h1 {
       bottom: 0;
       right: 0;
       left: 0; }
+
+.section-privacy {
+  word-wrap: break-word; }
+  .section-privacy ul {
+    padding-inline-start: 1em; }
+  .section-privacy a {
+    color: #F79420; }
+    .section-privacy a:hover {
+      opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
