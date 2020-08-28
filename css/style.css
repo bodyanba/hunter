@@ -295,6 +295,8 @@ h1, .h1 {
   max-width: 738px; }
 
 .slide {
+  display: flex;
+  flex-direction: column;
   padding: 19px 18px 27px;
   background-color: #fff;
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
