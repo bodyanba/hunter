@@ -42,8 +42,11 @@ h3, .h3
 	@media (min-width: 992px)
 		font-size: 2rem
 
-.fz-40
-	font-size: 40px
+.fz-50
+	text-transform: none
+	font-size: 2.5rem
+	@media (min-width: 992px)
+		font-size: 50px
 .fz-24
 	font-size: 24px
 .fz-20
@@ -53,11 +56,21 @@ h3, .h3
 .fz-18
 	font-size: 18px
 	line-height: 1.25
+.fz-16
+	font-size: 1rem
 .fz-14
 	font-size: 14px
 
 .text-warning
 	color: $color-warning !important
+.text-gray
+	color: #7F7C78 !important
+
+.text-line 
+	text-decoration: line-through
+
+.lh-1-75
+	line-height: 1.75
 
 .container
 	position: relative
@@ -268,6 +281,8 @@ h3, .h3
 .wi-1117
 	max-width: 1117px
 	margin-bottom: 46px
+.wi-1003
+	max-width: 1003px
 .wi-978
 	max-width: 978px
 .wi-965
@@ -494,9 +509,91 @@ h3, .h3
 		&:hover 
 			opacity: .8
 
+.block
+	color: #fff
+	font-size: 40px
+	text-align: center
+	background-image: url(../img/bg-1.jpg)
+	background-size: cover
+	border-radius: 10px
+	padding: 93px 20px 118px
+	@media (max-width: 991.98px)
+		padding: 70px 15px
+	@media (max-width: 767.98px)
+		font-size: 30px
 
+.block-shadow
+	background: url(../img/shadow-2.png) top center no-repeat
+	background-size: contain
+	padding: 77px 47px 71px
+	@media (max-width: 991.98px)
+		padding: 70px 0
 
+.block-1
+	font-size: 62px
+	background-color: #ECEDEE
+	border-radius: 10px
+	margin-bottom: 95px
+	@media (max-width: 991.98px)
+		font-size: 40px
+		margin-bottom: 70px
+	@media (max-width: 767.98px)
+		font-size: 30px
+	.bl
+		padding: 16px 0 10px 85px
+		@media (max-width: 991.98px)
+			padding: 15px 0 15px 40px
+		@media (max-width: 575.98px)
+			padding: 40px 15px 0
 
+.price
+	&-table
+		padding-top: 18px
+		margin-bottom: 97px
+	&-header
+		text-align: center
+		&-top
+			border-radius: 10px 10px 0 0 
+			background-color: #FDB22A
+			padding: 6.5px
+		&-bottom
+			font-size: 40px
+			font-weight: bold
+			background-color: #FD9526
+			padding: 14px 5px
+			@media (max-width: 767.98px)
+				font-size: 30px
+	&-row 
+		font-size: 22px
+		font-weight: bold
+		border-radius: 10px
+		@media (max-width: 1199.98px)
+			font-size: 20px
+		&:nth-child(even)
+			background-color: rgba(249, 249, 248, 0.05) / 2
+		&:nth-child(2)
+			border-top-right-radius: 0
+		&:last-child 
+			.price-row-item-2
+				border-radius: 0 0 10px 10px
+		&-item
+			&-1
+				padding: 17px 0 17px 19px
+			&-2
+				height: 100%
+				font-size: 0
+				padding: 7.5px 0
+				background-color: rgba(249, 249, 248, 0.05) / 2
+				display: flex
+				justify-content: center
+				&.check
+					&:before 
+						content: ''
+						display: inline-block
+						width: 45px
+						min-height: 45px
+						background: url(../img/check.svg) center center no-repeat
+						background-size: 45px
 
 
 
