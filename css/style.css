@@ -218,6 +218,22 @@ h1, .h1 {
       right: 75px;
       transform: translate(50%, -50%); }
 
+.owl-navs {
+  margin-bottom: 74px; }
+  .owl-navs .owl-nav [class*=owl-] {
+    width: 48px;
+    height: 48px;
+    background-color: #FF9502 !important;
+    background-image: url(../img/arrow-1.svg) !important; }
+    .owl-navs .owl-nav [class*=owl-]:before {
+      display: none; }
+    .owl-navs .owl-nav [class*=owl-].owl-prev {
+      left: -15px;
+      transform: rotate(180deg) translateY(50%); }
+    .owl-navs .owl-nav [class*=owl-].owl-next {
+      right: -15px;
+      transform: translateY(-50%); }
+
 .owl-1 {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -294,6 +310,9 @@ h1, .h1 {
   margin-left: auto;
   margin-right: auto; }
 
+.wi-1679 {
+  max-width: 1679px; }
+
 .wi-1140 {
   max-width: 1140px; }
 
@@ -328,7 +347,7 @@ h1, .h1 {
     margin-left: -10px;
     margin-right: -10px; }
 
-.owl-carousel .owl-item img {
+.owl-carousel:not(.owl-navs) .owl-item img {
   display: inline;
   width: auto; }
 
@@ -426,7 +445,10 @@ h1, .h1 {
 
 .section-6 .container {
   padding-top: 44px;
-  padding-bottom: 82px; }
+  padding-bottom: 138px; }
+  @media (max-width: 991.98px) {
+    .section-6 .container {
+      padding-bottom: 70px; } }
 
 .btn-wrap {
   background: linear-gradient(to right, #FD5629, #F79420);
@@ -529,18 +551,19 @@ h1, .h1 {
 
 .block {
   color: #fff;
-  font-size: 40px;
-  text-align: center;
+  font-size: 35.5px;
   background-image: url(../img/bg-1.jpg);
   background-size: cover;
   border-radius: 10px;
-  padding: 93px 20px 118px; }
+  padding: 0 14px; }
   @media (max-width: 991.98px) {
     .block {
-      padding: 70px 15px; } }
-  @media (max-width: 767.98px) {
-    .block {
       font-size: 30px; } }
+  .block .bl {
+    padding: 15px 0 15px 75px; }
+    @media (max-width: 991.98px) {
+      .block .bl {
+        padding: 40px 0 0; } }
 
 .block-shadow {
   background: url(../img/shadow-2.png) top center no-repeat;
@@ -550,32 +573,14 @@ h1, .h1 {
     .block-shadow {
       padding: 70px 0; } }
 
-.block-1 {
-  font-size: 62px;
-  background-color: #ECEDEE;
-  border-radius: 10px;
-  margin-bottom: 95px; }
-  @media (max-width: 991.98px) {
-    .block-1 {
-      font-size: 40px;
-      margin-bottom: 70px; } }
-  @media (max-width: 767.98px) {
-    .block-1 {
-      font-size: 30px; } }
-  .block-1 .bl {
-    padding: 16px 0 10px 85px; }
-    @media (max-width: 991.98px) {
-      .block-1 .bl {
-        padding: 15px 0 15px 40px; } }
-    @media (max-width: 575.98px) {
-      .block-1 .bl {
-        padding: 40px 15px 0; } }
-
 .price-table {
   padding-top: 18px;
-  margin-bottom: 97px; }
+  margin-bottom: 55px; }
 .price-header {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
   .price-header-top {
     border-radius: 10px 10px 0 0;
     background-color: #FDB22A;
@@ -584,10 +589,18 @@ h1, .h1 {
     font-size: 40px;
     font-weight: bold;
     background-color: #FD9526;
-    padding: 14px 5px; }
-    @media (max-width: 767.98px) {
+    padding: 14px 5px;
+    flex-grow: 1; }
+    @media (max-width: 991.98px) {
       .price-header-bottom {
         font-size: 30px; } }
+    .price-header-bottom.phb-2 {
+      font-size: 22px;
+      line-height: 1; }
+      @media (max-width: 991.98px) {
+        .price-header-bottom.phb-2 {
+          font-size: 16px;
+          line-height: inherit; } }
 .price-row {
   font-size: 22px;
   font-weight: bold;
@@ -617,5 +630,24 @@ h1, .h1 {
       min-height: 45px;
       background: url(../img/check.svg) center center no-repeat;
       background-size: 45px; }
+    .price-row-item-2.check.muted {
+      filter: grayscale(100);
+      opacity: 0.5; }
+
+.faq {
+  font-size: 22px;
+  line-height: 1.45; }
+  .faq-item {
+    margin-bottom: 22px;
+    background-color: #F9F9F8;
+    border-radius: 10px; }
+  .faq-header {
+    color: #F79420;
+    border-bottom: 1px solid #CFD0D1;
+    padding: 15px 30px;
+    font-weight: bold; }
+  .faq-body {
+    margin-bottom: 22px;
+    padding: 21px 30px 27px; }
 
 /*# sourceMappingURL=style.css.map */
